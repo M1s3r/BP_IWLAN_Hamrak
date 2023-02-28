@@ -6,12 +6,12 @@ function getHead(){
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-
-    </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+    
+    </head>       
 </html>
 HTML;
 }
@@ -19,24 +19,26 @@ HTML;
 function getHeader(){
     return <<<HTML
 <header>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand">Industrial WLAN</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Hľadaj niečo..." aria-label="Hľadať">
-                <button class="btn" type="submit">Hľadať</button>
-            </form>
-        </div>
-    </nav>
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.php">Industrial WLAN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.php">Registracia</a>
+        </li>
+    </ul>
 </header>
 HTML;
 }
 
-function getFooter(){
-    return <<<HTML
-<footer>
-    
-</footer>
-HTML;
 
+
+function getFooter(){
+    return <<<HTMl
+<footer>
+    <span>&copy;2023 Bakalárska práca - Michal Hamrák </span>
+</footer>
+</body>
+</html>
+HTMl;
 }
